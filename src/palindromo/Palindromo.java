@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package palindromo;
 
-/**
- *
- * @author LEIDY RODRIGUEZ
- */
+import java.util.Scanner;
+
 public class Palindromo {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner entrada = new Scanner (System.in);
+        int n;
+        System.out.print("ingrese un numero: ");
+        n=entrada.nextInt();
+        int cifras= 0;    //esta variable es el contador de cifras
+            while(n!=0){             //mientras a n le queden cifras
+                    n = n/10;         //le quitamos el último dígito
+                   cifras++;          //sumamos 1 al contador de cifras
+            }
+            System.out.println("El número tiene " + cifras+ " cifras");
     }
     
 }
