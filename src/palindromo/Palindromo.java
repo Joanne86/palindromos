@@ -30,5 +30,4 @@ public class Palindromo {
             System.out.println("\nno es palindromo");
         }
     }
-
 }
